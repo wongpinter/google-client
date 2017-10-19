@@ -27,11 +27,12 @@ class Client
     {
         $folder_path = dirname($this->credentialFile);
 
-        if (!is_dir($folder_path)) {
+        if ( !is_dir($folder_path) ) {
             mkdir($folder_path, 0777, true);
         }
 
         $accessToken = $this->client->fetchAccessTokenWithAuthCode($code);
+
         file_put_contents($this->credentialFile, json_encode($accessToken));
     }
 
@@ -91,6 +92,7 @@ class Client
         $this->client->setClientId($this->config['client_id']);
         $this->client->setClientSecret($this->config['client_secret']);
         $this->client->setRedirectUri($this->config['redirected_uri']);
+        $this->client->setApprovalPrompt($this->config['approval_prompt']);
         $this->client->setScopes($this->config['scopes']);
         $this->client->setAccessType($this->config['access_type']);
         $this->client->setDeveloperKey($this->config['developer_key']);

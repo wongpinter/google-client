@@ -10,7 +10,7 @@ return [
                             'https://www.googleapis.com/auth/admin.directory.user'
                          ],
     'access_type'     => 'offline',
-    'approval_prompt' => 'auto',
+    'approval_prompt' => 'force',
     'developer_key'   => env('GOOGLE_DEVELOPER_KEY', ''),
 
     'credential_file' => base_path('.google.credentials.json')

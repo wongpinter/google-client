@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Facade;
 
 class GoogleClientFacade extends Facade
 {
-
     /**
      * Get the registered name of the component.
      *
