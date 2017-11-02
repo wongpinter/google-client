@@ -27,10 +27,10 @@
     },
     "laravel": {
       "providers": [
-        "wongpinter\\GoogleClient\\GoogleClientServiceProvider"
+        "Wongpinter\\GoogleClient\\GoogleClientServiceProvider"
       ],
       "aliases": {
-        "GoogleClient": "wongpinter\\GoogleClient\\Facade\\GoogleClientFacade"
+        "GoogleClient": "Wongpinter\\GoogleClient\\Facade\\GoogleClientFacade"
       }
     }
   }
