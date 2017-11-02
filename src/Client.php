@@ -68,6 +68,8 @@ class Client
 
     public function client()
     {
+	$this->credential();
+
         return $this->client;
     }
 
